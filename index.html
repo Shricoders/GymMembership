@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVG Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cc/style.css">
+<style>
+        /*Css Reset  */
+        body{
+            font-family: 'Balsamiq Sans', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('css/gymbg.jfif');
+            /* height: 3000px; */
+        }
+        .left{
+            left: 60px;
+            top: 20px;
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            font-family: 'Balsamiq Sans', cursive;
+
+        }
+        .left img {
+              width: 100px;
+              height: 80px;
+              filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+       
+    }
+        .mid{
+            display: block;
+            width: 40%;
+            margin: 20px 280px;
+            /* border: 2px solid green; */
+
+
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top:20px;
+            /* border: 2px solid yellow; */
+            display: inline-block;
+
+
+        }
+        .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a {
+        text-decoration: none;
+        padding: 15px 5px;
+        color: white;
+
+    }
+    .navbar li a :hover,
+    .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 7px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .btn :hover{
+        background-color:blueviolet;
+    }
+    .container{
+        color: white;
+        border: 2px solid white;
+        margin: 102px 251px;
+        padding: 55px;
+        width: 43%;
+        border-radius: 20px;
+        font-size: 11px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 123px;
+        margin: auto;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 334px;
+        padding: 6px;
+        border: 2px solid black ;
+        margin: 10px auto;
+        border-radius: 13px;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+
+       
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+                <img src="css/dumbell.jfif" alt="">
+                <div>AVG Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Center</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+        <div class="right">
+            <!-- last box for buttons -->
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join the Best Gym in MUMBAI Now!!! </h1>
+       <form action="noaction.php">
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Name">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Age">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Gender">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Locality">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Email">
+       </div>
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Contact No">
+       </div>
+       <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
